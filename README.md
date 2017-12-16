@@ -1,6 +1,6 @@
 # ImageProcessing - TemplateReplacement
 
-A basic example of template replacement in binary images using EmguCV library and TPL Dataflow from .NET
+A basic example of template replacement in black images with some white areas (!not binary images), using EmguCV library and TPL Dataflow from .NET (for execution paralelism). The solution can be adjusted for all template replacement cases.
 
 ## Overview
 
@@ -24,10 +24,15 @@ IDE : Microsoft Visual Studio 2017
 ## How to build the project ?
 
 1. Install EmguCV and compile the sources (see how to use EmguCV with VS2017)
-2. Install TPL Dataflow package from nuget
-3. Go to Project tab in Visual Studio and choose Properties
-4. In the opened window choose Build tab and change the Platform target:
+2. Create a visual studio console application
+3. Add the provided files and/or adjust your Program.cs to match the provided Program.cs file
+4. Install TPL Dataflow package from nuget
+5. Go to Project tab in Visual Studio and choose Properties
+6. In the opened window choose Build tab and change the Platform target:
 	- if you choose x86 then : Add reference Emgu.CV.World.dll from bin/x86 folder found to the installed library path (usually in    C:\Emgu\emgucv-windesktop 3.3.0.2824)
 	- if you choose x64 then : Add reference Emgu.CV.World.dll from bin/x64 folder found to the installed library path (usually in C:\Emgu\emgucv-windesktop 3.3.0.2824)
-5. Right click on the solution name -> Add -> Add Existing Item... -> [Go to the EmguCV installed folder and find the "cvextern.dll"] -> Add
-6. Right click on "cvextern.dll" and press "Properties". In the properties window please change the "Copy to Output Directory" property form Advanced section with "Copy always" option
+6. Right click on the solution name -> Add -> Add Existing Item... -> [Go to the EmguCV installed folder and find the "cvextern.dll"] -> Add
+7. Right click on "cvextern.dll" and press "Properties". In the properties window please change the "Copy to Output Directory" property form Advanced section with "Copy always" option
+8. Build your project
+9. Copy and paste the provided bin content folder inside your bin folder
+10. Run the project

@@ -1,1 +1,1 @@
-# ImageProcessing_TemplateReplacement
+# ImageProcessing - TemplateReplacement
